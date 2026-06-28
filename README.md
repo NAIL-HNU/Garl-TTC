@@ -1,23 +1,31 @@
 # GarlTTC Release
 
-GarlTTC is the release code for RGB-event object time-to-contact estimation.
-This repository contains the training, inference, evaluation, dataset conversion
-and CodaBench helper code used by the GarlTTC benchmark release.
+Official release code for **GarlTTC**, an RGB-event object time-to-contact
+estimation benchmark. This repository contains training, inference, evaluation,
+dataset conversion, and CodaBench helper code for reproducing the released
+GarlTTC results.
 
-Public assets are hosted on Hugging Face:
+## 🤗 Hugging Face Assets
 
-- eAP media dataset: `NAIL-HNU/eAP-dataset`
-- GarlTTC annotations: `NAIL-HNU/GarlTTC-dataset`
-- GarlTTC checkpoints: `NAIL-HNU/GarlTTC-model`
-
-Project and benchmark pages:
-
-- eAP dataset project page: https://nail-hnu.github.io/eAP_dataset/
-- eAP 3D detection benchmark: https://www.codabench.org/competitions/16717/
-- GarlTTC benchmark: https://www.codabench.org/competitions/17289/
+| Asset | Repository | Contents |
+| --- | --- | --- |
+| 📦 eAP media dataset | [NAIL-HNU/eAP-dataset](https://huggingface.co/datasets/NAIL-HNU/eAP-dataset) | RGB/event media shared by eAP and GarlTTC |
+| 📄 GarlTTC annotations | [NAIL-HNU/GarlTTC-dataset](https://huggingface.co/datasets/NAIL-HNU/GarlTTC-dataset) | Public train labels plus test metadata |
+| 🧠 GarlTTC checkpoints | [NAIL-HNU/GarlTTC-model](https://huggingface.co/NAIL-HNU/GarlTTC-model) | Full model and ablation checkpoints |
 
 Download the eAP dataset first. The GarlTTC dataset references eAP RGB/event
 media and does not duplicate those files.
+
+## 🔗 Project And Benchmarks
+
+| Page | Link |
+| --- | --- |
+| 🌐 eAP dataset project page | https://nail-hnu.github.io/eAP_dataset/ |
+| 🏆 eAP 3D detection benchmark | https://www.codabench.org/competitions/16717/ |
+| 🏆 GarlTTC benchmark | https://www.codabench.org/competitions/17289/ |
+
+The public test annotations do not include ground-truth TTC values. Submit
+predictions to the CodaBench benchmark for official evaluation.
 
 ## Layout After Setup
 
