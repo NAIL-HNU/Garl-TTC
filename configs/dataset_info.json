@@ -1,0 +1,466 @@
+{
+    "2cyv0Oedzg": {
+        "weather": "晴天",
+        "road_type": "城区",
+        "contains_hdr": false,
+        "targets_per_frame": "多（5辆以上）",
+        "relative_speed": "中速跟车",
+        "split": "train"
+    },
+    "2JkLL5W891": {
+        "weather": "夜晚",
+        "road_type": "城区",
+        "contains_hdr": false,
+        "targets_per_frame": "中等（3-5辆车）",
+        "relative_speed": "中速跟车",
+        "split": "train"
+    },
+    "2Y46OkK3ff": {
+        "weather": "黄昏",
+        "road_type": "快速路",
+        "contains_hdr": false,
+        "targets_per_frame": "多（5辆以上）",
+        "relative_speed": "中速跟车",
+        "split": "train"
+    },
+    "34K84TaN11": {
+        "weather": "多云",
+        "road_type": "快速路",
+        "contains_hdr": false,
+        "targets_per_frame": "中等（3-5辆车）",
+        "relative_speed": "中速跟车",
+        "split": "train"
+    },
+    "3RUZHwnCwK": {
+        "weather": "黄昏",
+        "road_type": "快速路",
+        "contains_hdr": true,
+        "targets_per_frame": "中等（3-5辆车）",
+        "relative_speed": "中速跟车",
+        "split": "benchmark_test"
+    },
+    "5ilM1PX2vz": {
+        "weather": "黄昏",
+        "road_type": "快速路",
+        "contains_hdr": true,
+        "targets_per_frame": "少（小于3辆车）",
+        "relative_speed": "高速飙车急刹",
+        "split": "train"
+    },
+    "6h5yRW2LGc": {
+        "weather": "夜晚",
+        "road_type": "城区",
+        "contains_hdr": false,
+        "targets_per_frame": "少（小于3辆车）",
+        "relative_speed": "中速跟车",
+        "split": "train"
+    },
+    "6WCDpro5rE": {
+        "weather": "晴天",
+        "road_type": "城区",
+        "contains_hdr": true,
+        "targets_per_frame": "少（小于3辆车）",
+        "relative_speed": "中速跟车",
+        "split": "train"
+    },
+    "71wUSQYMpk": {
+        "weather": "黄昏",
+        "road_type": "城区",
+        "contains_hdr": false,
+        "targets_per_frame": "少（小于3辆车）",
+        "relative_speed": "缓慢跟车",
+        "split": "benchmark_test"
+    },
+    "89fvtHGHx2": {
+        "weather": "晴天",
+        "road_type": "快速路",
+        "contains_hdr": true,
+        "targets_per_frame": "少（小于3辆车）",
+        "relative_speed": "中速跟车",
+        "split": "benchmark_test"
+    },
+    "8mNnrXjpVB": {
+        "weather": "夜晚",
+        "road_type": "城区",
+        "contains_hdr": false,
+        "targets_per_frame": "少（小于3辆车）",
+        "relative_speed": "中速跟车",
+        "split": "train"
+    },
+    "8SdieOgbva": {
+        "weather": "晴天",
+        "road_type": "城区",
+        "contains_hdr": false,
+        "targets_per_frame": "多（5辆以上）",
+        "relative_speed": "中速跟车",
+        "split": "train"
+    },
+    "9ITOs4twfk": {
+        "weather": "晴天",
+        "road_type": "快速路",
+        "contains_hdr": false,
+        "targets_per_frame": "多（5辆以上）",
+        "relative_speed": "中速跟车",
+        "split": "train"
+    },
+    "A1Nhv0KtmL": {
+        "weather": "晴天",
+        "road_type": "快速路",
+        "contains_hdr": false,
+        "targets_per_frame": "中等（3-5辆车）",
+        "relative_speed": "高速飙车急刹",
+        "split": "train"
+    },
+    "AUIkq1ZJRv": {
+        "weather": "晴天",
+        "road_type": "快速路",
+        "contains_hdr": true,
+        "targets_per_frame": "中等（3-5辆车）",
+        "relative_speed": "中速跟车",
+        "split": "train"
+    },
+    "CEOFFwY7c8": {
+        "weather": "晴天",
+        "road_type": "快速路",
+        "contains_hdr": true,
+        "targets_per_frame": "少（小于3辆车）",
+        "relative_speed": "中速跟车",
+        "split": "train"
+    },
+    "ClXqVoZOFu": {
+        "weather": "多云",
+        "road_type": "高速",
+        "contains_hdr": false,
+        "targets_per_frame": "中等（3-5辆车）",
+        "relative_speed": "中速跟车",
+        "split": "train"
+    },
+    "CzyQ8HKP6X": {
+        "weather": "多云",
+        "road_type": "快速路",
+        "contains_hdr": false,
+        "targets_per_frame": "中等（3-5辆车）",
+        "relative_speed": "中速跟车",
+        "split": "train"
+    },
+    "DGqicHUGWb": {
+        "weather": "夜晚",
+        "road_type": "昏暗小路",
+        "contains_hdr": false,
+        "targets_per_frame": "少（小于3辆车）",
+        "relative_speed": "缓慢跟车",
+        "split": "train"
+    },
+    "EllUE6bwVp": {
+        "weather": "多云",
+        "road_type": "城区",
+        "contains_hdr": false,
+        "targets_per_frame": "中等（3-5辆车）",
+        "relative_speed": "缓慢跟车",
+        "split": "train"
+    },
+    "EuFGqTcqIz": {
+        "weather": "晴天",
+        "road_type": "快速路",
+        "contains_hdr": true,
+        "targets_per_frame": "中等（3-5辆车）",
+        "relative_speed": "中速跟车",
+        "split": "train"
+    },
+    "eX8t2nGd6O": {
+        "weather": "多云",
+        "road_type": "快速路",
+        "contains_hdr": true,
+        "targets_per_frame": "多（5辆以上）",
+        "relative_speed": "中速跟车",
+        "split": "train"
+    },
+    "F6XHHaiwJg": {
+        "weather": "多云",
+        "road_type": "快速路",
+        "contains_hdr": true,
+        "targets_per_frame": "中等（3-5辆车）",
+        "relative_speed": "中速跟车",
+        "split": "train"
+    },
+    "GjMYZjmSQb": {
+        "weather": "多云",
+        "road_type": "高速",
+        "contains_hdr": false,
+        "targets_per_frame": "中等（3-5辆车）",
+        "relative_speed": "高速飙车急刹",
+        "split": "train"
+    },
+    "HHJe79eY2J": {
+        "weather": "夜晚",
+        "road_type": "城区",
+        "contains_hdr": false,
+        "targets_per_frame": "多（5辆以上）",
+        "relative_speed": "中速跟车",
+        "split": "benchmark_test"
+    },
+    "JaGC4Q9pgU": {
+        "weather": "多云",
+        "road_type": "快速路",
+        "contains_hdr": false,
+        "targets_per_frame": "中等（3-5辆车）",
+        "relative_speed": "中速跟车",
+        "split": "train"
+    },
+    "JcjcDPISuL": {
+        "weather": "晴天",
+        "road_type": "城区",
+        "contains_hdr": false,
+        "targets_per_frame": "中等（3-5辆车）",
+        "relative_speed": "中速跟车",
+        "split": "benchmark_test"
+    },
+    "kafYzX6kJ4": {
+        "weather": "夜晚",
+        "road_type": "昏暗小路",
+        "contains_hdr": false,
+        "targets_per_frame": "少（小于3辆车）",
+        "relative_speed": "中速跟车",
+        "split": "benchmark_test"
+    },
+    "L36QTEoVkB": {
+        "weather": "多云",
+        "road_type": "快速路",
+        "contains_hdr": false,
+        "targets_per_frame": "中等（3-5辆车）",
+        "relative_speed": "中速跟车",
+        "split": "train"
+    },
+    "LMHPShQkaU": {
+        "weather": "晴天",
+        "road_type": "快速路",
+        "contains_hdr": false,
+        "targets_per_frame": "多（5辆以上）",
+        "relative_speed": "中速跟车",
+        "split": "train"
+    },
+    "M8I2irMvY7": {
+        "weather": "多云",
+        "road_type": "快速路",
+        "contains_hdr": true,
+        "targets_per_frame": "中等（3-5辆车）",
+        "relative_speed": "中速跟车",
+        "split": "benchmark_test"
+    },
+    "mHGFBekt7X": {
+        "weather": "晴天",
+        "road_type": "快速路",
+        "contains_hdr": false,
+        "targets_per_frame": "多（5辆以上）",
+        "relative_speed": "中速跟车",
+        "split": "train"
+    },
+    "Mu6kaUjIz3": {
+        "weather": "多云",
+        "road_type": "城区",
+        "contains_hdr": false,
+        "targets_per_frame": "中等（3-5辆车）",
+        "relative_speed": "中速跟车",
+        "split": "benchmark_test"
+    },
+    "mXRa2Ux9ok": {
+        "weather": "夜晚",
+        "road_type": "城区",
+        "contains_hdr": false,
+        "targets_per_frame": "中等（3-5辆车）",
+        "relative_speed": "中速跟车",
+        "split": "train"
+    },
+    "nP4MRdpEeO": {
+        "weather": "夜晚",
+        "road_type": "城区",
+        "contains_hdr": false,
+        "targets_per_frame": "少（小于3辆车）",
+        "relative_speed": "中速跟车",
+        "split": "benchmark_test"
+    },
+    "nRcwUlHyAd": {
+        "weather": "多云",
+        "road_type": "城区",
+        "contains_hdr": false,
+        "targets_per_frame": "中等（3-5辆车）",
+        "relative_speed": "中速跟车",
+        "split": "train"
+    },
+    "OBneIVg4Cw": {
+        "weather": "黄昏",
+        "road_type": "城区",
+        "contains_hdr": false,
+        "targets_per_frame": "少（小于3辆车）",
+        "relative_speed": "中速跟车",
+        "split": "train"
+    },
+    "OwA5qqkewc": {
+        "weather": "晴天",
+        "road_type": "快速路",
+        "contains_hdr": false,
+        "targets_per_frame": "中等（3-5辆车）",
+        "relative_speed": "中速跟车",
+        "split": "train"
+    },
+    "OYgB6RGWcq": {
+        "weather": "晴天",
+        "road_type": "快速路",
+        "contains_hdr": false,
+        "targets_per_frame": "中等（3-5辆车）",
+        "relative_speed": "高速飙车急刹",
+        "split": "train"
+    },
+    "pakWgyPNTL": {
+        "weather": "晴天",
+        "road_type": "城区",
+        "contains_hdr": false,
+        "targets_per_frame": "中等（3-5辆车）",
+        "relative_speed": "中速跟车",
+        "split": "train"
+    },
+    "pBqGOb2vYq": {
+        "weather": "多云",
+        "road_type": "城区",
+        "contains_hdr": false,
+        "targets_per_frame": "多（5辆以上）",
+        "relative_speed": "中速跟车",
+        "split": "train"
+    },
+    "Po6ePjWYAz": {
+        "weather": "黄昏",
+        "road_type": "快速路",
+        "contains_hdr": false,
+        "targets_per_frame": "中等（3-5辆车）",
+        "relative_speed": "高速飙车急刹",
+        "split": "train"
+    },
+    "pzJcg1OCfc": {
+        "weather": "黄昏",
+        "road_type": "快速路",
+        "contains_hdr": true,
+        "targets_per_frame": "中等（3-5辆车）",
+        "relative_speed": "中速跟车",
+        "split": "train"
+    },
+    "q2k6O0X6JY": {
+        "weather": "多云",
+        "road_type": "快速路",
+        "contains_hdr": false,
+        "targets_per_frame": "中等（3-5辆车）",
+        "relative_speed": "高速飙车急刹",
+        "split": "train"
+    },
+    "qGsgzl4Q8B": {
+        "weather": "黄昏",
+        "road_type": "快速路",
+        "contains_hdr": false,
+        "targets_per_frame": "中等（3-5辆车）",
+        "relative_speed": "高速飙车急刹",
+        "split": "train"
+    },
+    "qoohcdtLDH": {
+        "weather": "晴天",
+        "road_type": "城区",
+        "contains_hdr": false,
+        "targets_per_frame": "少（小于3辆车）",
+        "relative_speed": "中速跟车",
+        "split": "train"
+    },
+    "r0PXQOpCA6": {
+        "weather": "晴天",
+        "road_type": "快速路",
+        "contains_hdr": false,
+        "targets_per_frame": "少（小于3辆车）",
+        "relative_speed": "中速跟车",
+        "split": "benchmark_test"
+    },
+    "rhYxPcU29n": {
+        "weather": "多云",
+        "road_type": "城区",
+        "contains_hdr": false,
+        "targets_per_frame": "多（5辆以上）",
+        "relative_speed": "缓慢跟车",
+        "split": "train"
+    },
+    "t79dBxj1WS": {
+        "weather": "晴天",
+        "road_type": "快速路",
+        "contains_hdr": false,
+        "targets_per_frame": "中等（3-5辆车）",
+        "relative_speed": "中速跟车",
+        "split": "train"
+    },
+    "uXfPJNOXVY": {
+        "weather": "晴天",
+        "road_type": "快速路",
+        "contains_hdr": false,
+        "targets_per_frame": "少（小于3辆车）",
+        "relative_speed": "高速飙车急刹",
+        "split": "train"
+    },
+    "V741M41vPW": {
+        "weather": "晴天",
+        "road_type": "快速路",
+        "contains_hdr": true,
+        "targets_per_frame": "中等（3-5辆车）",
+        "relative_speed": "中速跟车",
+        "split": "benchmark_test"
+    },
+    "vhjB5OViA7": {
+        "weather": "黄昏",
+        "road_type": "快速路",
+        "contains_hdr": false,
+        "targets_per_frame": "少（小于3辆车）",
+        "relative_speed": "高速飙车急刹",
+        "split": "benchmark_test"
+    },
+    "VLA3oBKFyX": {
+        "weather": "晴天",
+        "road_type": "快速路",
+        "contains_hdr": true,
+        "targets_per_frame": "中等（3-5辆车）",
+        "relative_speed": "中速跟车",
+        "split": "train"
+    },
+    "vWp9XNYQ9V": {
+        "weather": "晴天",
+        "road_type": "快速路",
+        "contains_hdr": false,
+        "targets_per_frame": "中等（3-5辆车）",
+        "relative_speed": "高速飙车急刹",
+        "split": "train"
+    },
+    "WbCh1DRerJ": {
+        "weather": "黄昏",
+        "road_type": "快速路",
+        "contains_hdr": true,
+        "targets_per_frame": "少（小于3辆车）",
+        "relative_speed": "中速跟车",
+        "split": "train"
+    },
+    "wE9MZUmiJP": {
+        "weather": "多云",
+        "road_type": "快速路",
+        "contains_hdr": false,
+        "targets_per_frame": "中等（3-5辆车）",
+        "relative_speed": "中速跟车",
+        "split": "train"
+    },
+    "xkiVthsGwf": {
+        "weather": "夜晚",
+        "road_type": "城区",
+        "contains_hdr": false,
+        "targets_per_frame": "中等（3-5辆车）",
+        "relative_speed": "中速跟车",
+        "split": "train"
+    },
+    "Z30i8WuL2N": {
+        "weather": "黄昏",
+        "road_type": "快速路",
+        "contains_hdr": false,
+        "targets_per_frame": "中等（3-5辆车）",
+        "relative_speed": "高速飙车急刹",
+        "split": "train"
+    }
+}

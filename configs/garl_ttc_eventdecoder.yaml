@@ -1,0 +1,124 @@
+# YAML file storing experimental configurations for training the TTC Network
+
+## general settings
+name: 'garl_ttc_eventdecoder'
+use_gpu: True
+gpu_id: [0] # MODIFY this to the GPU/GPUs ids in your computer
+#gpu_id: [0,1,2] # MODIFY this to the GPU/GPUs ids in your computer
+
+## operations
+train: True
+save: True
+visualize: False
+evaluate: False
+# exp_type: 'baseline'
+exp_type: 'garl_ttc_eventdecoder'
+
+## output directories
+dirs:
+    # MODIFY them to your preferred directories
+    output: './outputs/training_record'
+    # This directory save intermediate training results (optional)
+    debug: './outputs/training_record/debug' 
+
+## CUDNN settings
+cudnn:
+    enabled: True
+    deterministic: False
+    benchmark: False
+
+## dataset settings
+dataset:
+    name: 'EventTTC'
+    root: 'data/eAP-dataset'
+    data_blob_dir: 'data/eAP-dataset/data_blobs'
+    raw_data_tag: 'EnnTTC_v2'
+    anno_tag: 'pse_lite'
+    # fillter_tag: '20250220_full/temp_debug_np'
+    fillter_tag: '20250220_full'
+    db_sample_size: 100000000
+    # sync decide how to load event data, explain in class 'TTCEstimationDataset'
+    sync: 'front'
+    window_interval: 1    # number of intervals between two frames
+    event_pixel_diff: 5 # pixels shift to better align event on image frame
+    img_mean: [0.485, 0.456, 0.406] 
+    img_std: [0.229, 0.224, 0.225]
+    fy: 1694.1323524131867
+    # mode: 'image_only' # choice: ['image_only', 'event_only', 'image_event']
+    mode: 'image_event'
+
+    # training data
+    train:
+        asset_path: 'configs/splits/train.txt'
+        annotation_dir: 'dataset/annotations/train'
+
+    test:
+        asset_path: 'configs/splits/test.txt'
+        annotation_dir: 'dataset/annotations/benchmark_test'
+
+
+    # detect_classes: ['Car']
+    # # do some pre-processing
+    # pre-process: False
+    # # MODIFY this to your DATA directory
+    
+    # # augmentation parameters
+    # scaling_factor: 0.2
+    # rotation_factor: 30. # degrees
+    # # pytorch image transformation setting
+    # pth_transform:   
+
+model:
+    input_feat_num: 6 # (20 event planes(eventvolume) + 3 RGB) * 2 Frames
+    # input_feat_num: 8 # (1 event planes + 3 RGB) * 2 Frames
+    num_layers: 50  # ResNet18
+    input_feat_size: [128, 128]
+    fc_features: 512
+    mode: 'height_ratio' # choice: ['baseline', 'height_ratio', 'height_ratio_direct']
+    fusion_style: 'late_fusion'
+    pretrained_ckpt_rgb: 'checkpoints/paper_visual_only_lhr.pth'
+    pretrained_ckpt_event: 'checkpoints/paper_event_only_lhr.pth'
+    input_feat_num_rgb: 6
+    input_feat_num_event: 40
+    frame_num: 2
+    visualize: False
+    with_decoder: True
+    decoder_layers: [2,2,2,2]
+    
+## training settings  
+training_settings:
+    total_epochs: 50
+    report_every: 1
+    #snapshot_epochs: [10]
+    resume: False
+    ckpt_path: None
+    batch_size: 128
+    num_threads: 16 # MODIFY this accordingly based on your machine
+    # num_threads: 16 # MODIFY this accordingly based on your machine
+    shuffle: True
+    pin_memory: False    
+    visualize_training_process: False
+    gt_range: [-10, 10]
+    snapshot_epochs: [1, 2, 3, 4, 5, 6, 7, 10, 20, 50]
+    
+## testing settings
+testing_settings:
+    # batch_size: 64
+    batch_size: 1
+    num_threads: 4
+    shuffle: False
+    pin_memory: False
+    apply_dropout: False
+    unnormalize: False
+
+## optimizer settings
+optimizer:
+    # for ADAM
+    optim_type: 'adam'
+    lr: 0.001
+    weight_decay: 0.0
+    # for SGD
+    momentum: 0.9
+    # learning rate decay
+    milestones: [10, 20, 30, 40]
+    gamma: 0.5

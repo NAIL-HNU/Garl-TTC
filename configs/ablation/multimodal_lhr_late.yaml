@@ -1,0 +1,106 @@
+name: multimodal_lhr_late
+use_gpu: true
+gpu_id:
+- 0
+train: true
+save: true
+visualize: false
+evaluate: false
+exp_type: multimodal_lhr_late
+dirs:
+  output: ./outputs/training_record
+  debug: ./outputs/training_record/debug
+cudnn:
+  enabled: true
+  deterministic: false
+  benchmark: false
+dataset:
+  name: EventTTC
+  root: data/eAP-dataset
+  data_blob_dir: data/eAP-dataset/data_blobs
+  raw_data_tag: EnnTTC_v2
+  anno_tag: pse_lite
+  fillter_tag: 20250220_full
+  db_sample_size: 100000000
+  sync: front
+  window_interval: 1
+  event_pixel_diff: 5
+  img_mean:
+  - 0.485
+  - 0.456
+  - 0.406
+  img_std:
+  - 0.229
+  - 0.224
+  - 0.225
+  fy: 1694.1323524131867
+  mode: image_event
+  train:
+    asset_path: configs/splits/train.txt
+    annotation_dir: dataset/annotations/train
+  test:
+    asset_path: configs/splits/test.txt
+    annotation_dir: dataset/annotations/benchmark_test
+model:
+  input_feat_num: 6
+  num_layers: 50
+  input_feat_size:
+  - 128
+  - 128
+  fc_features: 512
+  mode: height_ratio
+  fusion_style: late_fusion
+  pretrained_ckpt_rgb: checkpoints/paper_visual_only_lhr.pth
+  pretrained_ckpt_event: checkpoints/paper_event_only_lhr.pth
+  input_feat_num_rgb: 6
+  input_feat_num_event: 40
+  frame_num: 2
+  visualize: false
+  with_decoder: false
+  decoder_layers:
+  - 2
+  - 2
+  - 2
+  - 2
+training_settings:
+  total_epochs: 50
+  report_every: 1
+  resume: false
+  ckpt_path: None
+  batch_size: 128
+  num_threads: 16
+  shuffle: true
+  pin_memory: false
+  visualize_training_process: false
+  gt_range:
+  - -10
+  - 10
+  snapshot_epochs:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 10
+  - 20
+  - 50
+testing_settings:
+  batch_size: 8
+  num_threads: 0
+  shuffle: false
+  pin_memory: false
+  apply_dropout: false
+  unnormalize: false
+optimizer:
+  optim_type: adam
+  lr: 0.001
+  weight_decay: 0.0
+  momentum: 0.9
+  milestones:
+  - 10
+  - 20
+  - 30
+  - 40
+  gamma: 0.5

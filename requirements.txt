@@ -1,0 +1,13 @@
+--extra-index-url https://download.pytorch.org/whl/cu113
+h5py==3.7.0
+hdf5plugin==4.1.2
+numpy>=1.24,<2
+opencv-python>=4.7,<4.11
+pandas>=1.5,<2.1
+Pillow
+pyarrow
+PyYAML
+datasets
+torch==1.12.1+cu113
+torchvision==0.13.1+cu113
+tqdm

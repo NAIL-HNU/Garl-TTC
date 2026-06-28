@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "garl-ttc"
+version = "0.1.0"
+description = "Garl-TTC / NNTTC training, evaluation, and inference code"
+readme = "README.md"
+requires-python = ">=3.8,<3.11"
+dependencies = [
+  "h5py==3.7.0",
+  "hdf5plugin==4.1.2",
+  "numpy>=1.24,<2",
+  "opencv-python>=4.7,<4.11",
+  "pandas>=1.5,<2.1",
+  "Pillow",
+  "pyarrow",
+  "PyYAML",
+  "datasets",
+  "torch==1.12.1+cu113",
+  "torchvision==0.13.1+cu113",
+  "tqdm",
+]
+
+[project.scripts]
+garlttc-build-dataset = "garl_ttc_benchmark.build_garlttc_dataset:main"
+garlttc-evaluate-submission = "garl_ttc_benchmark.evaluator.evaluate_garlttc:main"
+garlttc-build-codabench = "garl_ttc_benchmark.codabench.build_codabench_bundle:main"
+garlttc-stage-model-repo = "garl_ttc_benchmark.stage_model_repo:main"
+
+[tool.setuptools.packages.find]
+include = ["garl_ttc*", "garl_ttc_benchmark*"]
+
+[tool.uv]
+package = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu113" }
+torchvision = { index = "pytorch-cu113" }
+
+[[tool.uv.index]]
+name = "pytorch-cu113"
+url = "https://download.pytorch.org/whl/cu113"
+explicit = true
