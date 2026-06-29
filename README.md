@@ -21,8 +21,8 @@ media and does not duplicate those files.
 | Page | Link |
 | --- | --- |
 | 🌐 eAP dataset project page | https://nail-hnu.github.io/eAP_dataset/ |
-| 🏆 eAP 3D detection benchmark | https://www.codabench.org/competitions/16717/ |
-| 🏆 GarlTTC benchmark | https://www.codabench.org/competitions/17289/ |
+| 🏆 eAP Benchmark | https://www.codabench.org/competitions/17291/ |
+| 🏆 GarlTTC Benchmark | https://www.codabench.org/competitions/17289/ |
 
 The public test annotations do not include ground-truth TTC values. Submit
 predictions to the CodaBench benchmark for official evaluation.
